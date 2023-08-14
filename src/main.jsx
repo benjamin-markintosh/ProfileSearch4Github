@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import ErrorPage from "./components/ErrorHandler.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ProfileComponent from "./components/profile.jsx";
+import ProfileComponent from "./components/Profile.jsx";
 
 async function GetProfileData() {
   let username = localStorage.getItem("githubUsername");

@@ -1,6 +1,6 @@
 //import { useState } from "react";
 
-import SearchComponent from "./components/search";
+import SearchComponent from "./components/Search";
 import "./App.css";
 
 function App() {

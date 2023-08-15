@@ -3,15 +3,15 @@ import { useNavigate } from "react-router-dom";
 import githubIcon from "../assets/github-mark/github-mark.svg";
 
 function SearchComponent() {
-  let [username, setUsername] = useState("");
+  const [username, setUsername] = useState("");
   let navigate = useNavigate();
   function KeyDownHandler(e) {
     if (e.key === "Enter") {
       console.log(e.target.value);
-      let inputText = e.target.value;
-      setUsername(inputText);
+      let username = e.target.value;
+      setUsername(username);
 
-      localStorage.setItem("githubUsername", inputText);
+      localStorage.setItem("githubUsername", username);
       navigate("/profile");
     }
   }
